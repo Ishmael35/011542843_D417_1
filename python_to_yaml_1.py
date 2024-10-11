@@ -72,7 +72,7 @@ inventory = {
 }
 
 
-with open('yaml_inventory.yaml_1', 'w') as file:
+with open('yaml_inventory_1.yaml', 'w') as file:
     yaml.dump(inventory, file, default_flow_style=False)
 
 
