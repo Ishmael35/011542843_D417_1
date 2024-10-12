@@ -23,6 +23,7 @@ def ssh_to_switch(host, user, password=""):
 
 if __name__ == "__main__":
 	switches = [
+#		{"host": '10.10.1.2', "user:  "admin"},
 		{"host": '10.10.1.5', "user": "admin"},
 		{"host": '10.10.1.6', "user": "admin"},
 		{"host": '10.10.1.7', "user": "admin"},
