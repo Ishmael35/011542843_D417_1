@@ -26,6 +26,20 @@ IT_Network:
     Base_MAC: 0c:1c:b2:85:00:00
     Replicate_network_connection_states_in_QEMU: true
     Type: Realtek 8139 Ethernet (rtl8139)
+Local_Switch:
+  General_Settings:
+    Boot_Priority: CD/DVD-ROM or HDD
+    Console_type: telnet
+    Name: Local_Switch
+    On_close: Power off the VM
+    QEMU_binary: /usr/bin/qemu-system-x86_64(v4.2.1)
+    RAM: 512 GB
+    vCPUs: '1'
+  Network_Settings:
+    Adapters: '13'
+    Base_MAC: 0c:c0:5e:66:00:00
+    Replicate_network_connection_states_in_QEMU: true
+    Type: Realtek 8139 Ethernet (rtl8139)
 MGMT_Network:
   General_Settings:
     Boot_Priority: CD/DVD-ROM or HDD

@@ -68,11 +68,27 @@ inventory = {
             'Type': 'Realtek 8139 Ethernet (rtl8139)',
             'Replicate_network_connection_states_in_QEMU': True
         }
-    }
+    },
+     'Local_Switch': {
+        'General_Settings': {
+            'Name': 'Local_Switch',
+            'RAM': '512 GB',
+            'vCPUs': '1',
+            'QEMU_binary': '/usr/bin/qemu-system-x86_64(v4.2.1)',
+            'Boot_Priority': 'CD/DVD-ROM or HDD',
+            'On_close': 'Power off the VM',
+            'Console_type': 'telnet'
+        },
+         'Network_Settings': {
+            'Adapters': '13',
+            'Base_MAC': '0c:c0:5e:66:00:00',
+            'Type': 'Realtek 8139 Ethernet (rtl8139)',
+            'Replicate_network_connection_states_in_QEMU': True
+        },    
+     }
 }
 
-
-with open('yaml_inventory_1.yaml', 'w') as file:
-    yaml.dump(inventory, file, default_flow_style=False)
+with open('inventory_file1.yaml', 'w') as file:
+    	yaml.dump(inventory, file, default_flow_style=False)
 
 
